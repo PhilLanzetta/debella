@@ -31,11 +31,5 @@ module.exports = {
         icon: `src/images/DeBellaFav.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `47324054201`,
-      },
-    },
   ],
 }
