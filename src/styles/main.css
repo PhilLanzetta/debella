@@ -507,9 +507,20 @@ footer,
 
 .testimonial {
   margin: 1rem auto;
-  padding: 0 1rem;
+  justify-content: center;
+  padding: 0 4rem;
   line-height: 2;
   text-align: center;
+}
+
+.testimonial p {
+  text-align: right;
+}
+
+.stars {
+  color: var(--clr-accent);
+  margin-top: 0.5rem;
+  letter-spacing: var(--spacing);
 }
 
 .testimonial-slider {

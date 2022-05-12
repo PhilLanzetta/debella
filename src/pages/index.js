@@ -7,7 +7,10 @@ import Services from "../components/services"
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Home" />
+    <Seo
+      title="Home"
+      description="Superior asphalt construction and maintenance services"
+    />
     <Hero />
     <Services />
     <InstaCarousel />
