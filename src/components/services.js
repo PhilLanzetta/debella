@@ -1,26 +1,47 @@
 import React from "react"
-import { HiOutlineOfficeBuilding, HiOutlineHome } from "react-icons/hi"
+import {
+  HiOutlineOfficeBuilding,
+  HiOutlineHome,
+  HiOutlineCheck,
+} from "react-icons/hi"
 import { BiWater } from "react-icons/bi"
 import FadeIn from "./fadeIn"
 
 const serviceArray = [
   {
     title: "commercial paving & sealing",
-    description:
-      "Private/Municipal roads, parking lots, athletic courts, millings, patchwork, professional grade seal coating, maintenance",
+    description: [
+      "Private/Municipal roads",
+      "Parking lots",
+      "Athletic courts",
+      "Millings",
+      "Patchwork",
+      "Professional grade seal coating",
+      "Maintenance",
+    ],
     icon: <HiOutlineOfficeBuilding className="service-icon" />,
     id: 1,
   },
   {
     title: "residential paving & sealing",
-    description:
-      "Driveways, private roads, athletic courts, millings, patchwork, SealMaster seal coating",
+    description: [
+      "Driveways",
+      "Private roads",
+      "Athletic courts",
+      "Millings",
+      "Patchwork",
+      "SealMaster seal coating",
+    ],
     icon: <HiOutlineHome className="service-icon" />,
     id: 2,
   },
   {
     title: "drainage",
-    description: "pipe drainage",
+    description: [
+      "Pipe drainage",
+      "Catch basin",
+      "Storm drain installation & repair",
+    ],
     icon: <BiWater className="service-icon" />,
     id: 3,
   },
@@ -38,7 +59,13 @@ const Services = () => {
               {icon}
               <h3>{title}</h3>
               <div className="underline"></div>
-              <p>{description}</p>
+              <ul>
+                {description.map((item, index) => (
+                  <li key={index}>
+                    <HiOutlineCheck className="check-icon" /> {item}
+                  </li>
+                ))}
+              </ul>
             </FadeIn>
           )
         })}

@@ -529,6 +529,15 @@ footer,
   margin: 4rem;
 }
 
+.service ul {
+  text-align: left;
+  line-height: 1.75;
+}
+
+.check-icon {
+  margin-right: 0.5rem;
+}
+
 @media screen and (max-width: 1200px) {
   .service {
     width: 48%;
