@@ -665,3 +665,15 @@ footer,
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
+
+.success-message {
+  margin-bottom: 4rem;
+}
+
+.error-page {
+  min-height: calc(100vh - 300px);
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  text-align: center;
+}
